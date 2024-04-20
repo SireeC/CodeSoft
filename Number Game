@@ -9,9 +9,9 @@ public class NumberGuessingGame
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         
-        int min_range = 0;
-        int max_range = 150;
-        int attempts_limit = 10;
+        int min_range = 1;
+        int max_range = 100;
+        int attempts_limit = 6;
         int rounds = 0;
         int total_attempts = 0;
         
@@ -40,11 +40,11 @@ public class NumberGuessingGame
                 }
 		else if (guess < generated_number)
 		{
-                    System.out.println("smaller! Try again.");
+                    System.out.println("Too low! Try again.");
                 }
 		else
 		{
-                    System.out.println("larger! Try again.");
+                    System.out.println("Too high! Try again.");
                 }
             }
             
